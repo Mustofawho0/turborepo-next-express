@@ -1,0 +1,26 @@
+{
+  "name": "turborepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^8.0.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.7",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "npm@10.9.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
